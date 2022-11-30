@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --light: #fafafa;
+  --nav-light: #89a5cf;
+  --background: #678FF2;
+  --text-secondary: #737373;
+  --text: #252b42;
+  --primary: #ff7b47;
+  --secondary: #0d5c63;
+  --dark: #000000;
+  --text-light: #ffffff;
+  --input-light: #f9f9f9;
+  --border: #bdbdbd;
+}
+
+html {
+  font-size: 62,5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--background);   
+}
+header {
+  background: var(--nav-light);
+}
+h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--text-light);
+  text-align: left;
+}
+h2 {
+  font-size: 2.8125rem;
+  font-weight: 700;
+  line-height: 120px;
+  color: var(--text);
+  text-align: center;
+}
+h3{
+  font-size: 2.8125rem;
+  font-weight: 700;
+  line-height: 120px;
+  color: var(--text);
+  text-align: center;
+}
+a {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 31.38px;
+  color: whitesmoke; 
+
+}
+.white{
+  color:var(--light);
+}
+.first {  
+  margin: 0 auto;
+
+}
+.second{
+   font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 31.38px;
+  border:3px solid black;
+  border-radius: 30px;
+  color: whitesmoke;
+  background-color: #000000;
+}
+
+.secondP {
+  text-align: center;
+}
+article {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 14px;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding:15px;
+  color: #000000;  
+}
+
+button {
+ margin: 0 auto;
+ display: block;
+}
+
+li{
+  border: 3px solid var(--nav-light);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin:100px;
+  
+}
+.fourth{
+  margin: 0 auto;
+  border-top:2px solid var(--light);
+}
+blockquote{
+  position: relative;
+  padding: 16px 24px;
+  margin: 16px;
+  display: block;
+  border:3 px solid var(--nav-light);
+  border-radius: 20px 3px 5px 20px;
+  color: var(--text-light);
+  background: var(--nav-light);
+}
+.fifth{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--dark);
+ 
+}
+footer{
+  background: var(--nav-light);
+}
+.end{
+  border-style:none;
+  margin:0;
+  display:inline;
+}
+
