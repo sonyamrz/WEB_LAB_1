@@ -5,7 +5,8 @@
   --background: #678ff2;
   --background2: #628eef;
   --background3:#678FF2;
-  --text: #252b42;
+  --background4:#5e83e0b7;
+  --text: #a1b2f3;
   --secondary: #5081ed;
   --dark: #000000;
   --footer: #5082edcb;
@@ -30,16 +31,22 @@ body ul {
   padding: 0;
 }
 header {
-  background-color: var(--background2);
+  background-color: var(--background4);
+
   border-bottom: solid var(--light) 0.1rem;
 }
 .header {
-  background-color: var(--background2);
+  background-color: var(--background4);
+  
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   border-left: solid var(--light) 0.1rem;
   max-width: 1920px;
   margin: 0 auto;
+}
+.hrDeks{
+display:none;
 }
 .header .header_ {
   display: none;
@@ -47,7 +54,7 @@ header {
   margin: auto 9.5rem;
 }
 .menu {
-  background: var(--background2);
+  background: var(--background4);
   border: none;
   margin-right: 2.9rem;
 }
@@ -58,19 +65,20 @@ header {
   padding: 1rem 2.9rem;
   padding-right: 5rem;
 }
-.header .covid {
+.covid{
   display:none;
-  font-size: 2.3rem;
-  border-right: solid var(--light) 0.1rem;
-  padding-right: 5rem;
-  padding: 1rem 2.9rem;
-  padding-right: 5rem;
+}
+.hrDeks3 {
+  display: none;
+}
+.planet {
+  display:none;
 }
 .header span {
   font-weight: bold;
 }
 
-.header button {
+.header button1 {
   display: block;
   margin-left: auto;
 }
@@ -92,8 +100,8 @@ header {
 }
 
 .hello {
-  font-weight: 700;
-  font-size: 4.2rem;
+  font-weight: 1000;
+  font-size: 5.2rem;
   color: var(--dark);
   line-height: 95%;
   text-align: left;
@@ -170,10 +178,7 @@ header {
   margin: 5rem 0.5rem;
 }
 
-.header button {
-  display: block;
-  margin-left: auto;
-}
+
 h3 {
   font-size: 1.4rem;
   line-height: 214%;
@@ -183,6 +188,13 @@ h3 {
 a {
   color: whitesmoke;
 }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
 .firstul {
   display: grid;
   padding: 3rem;
@@ -295,7 +307,7 @@ a {
   position: relative;
   color: var(--dark);
   border-radius: 2rem;
-  background-color: var(--background2);
+  backface-visibility: hidden;
   height: auto;
   z-index: 2;
   margin: 15rem 1rem auto 5rem;
@@ -334,8 +346,7 @@ a {
 .how {
   display: flex;
   justify-content: center;
-  margin-top: -8rem;
-  margin-bottom: 10rem;
+  margin-top: 10rem;
   font-size: 4rem;
   color: var(--light);
   z-index: 1;
@@ -424,7 +435,12 @@ col {
   height: 29.5rem;
   overflow: hidden;
 }
-
+.conthead{
+  display: flex;
+  gap: 1rem;
+  margin-left: 23rem;
+  margin-right: auto;
+}
 .col2 {
   display: flex;
   flex-direction: column;
@@ -592,6 +608,7 @@ footer .links2 .links2ul {
   .formlink {
     display: none;
   }
+ 
 }
 
 @media all and (min-width: 768px) {
@@ -625,12 +642,55 @@ footer .links2 .links2ul {
 
 @media all and (min-width: 1024px) {
   .hello{
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 8rem;
     line-height: 100%;
     text-align: left;
     width: 100rem;
     padding-bottom: 5rem;
+}
+.hrDeks{
+  display: flex;
+   writing-mode: vertical-rl;
+   color: var(--light);
+   width: .1rem;
+   height: 3.99rem;
+   border: 0;
+   background-color: var(--light);
+}
+.hrDeks3{
+  display: flex;
+  writing-mode: vertical-rl;
+  color: var(--light);
+  width: .1rem;
+  height: 3.99rem;
+  border: 0;
+  background-color: var(--light);
+}
+.planet{
+  visibility: visible;
+}
+.conthead {
+    display: flex;
+    gap: 1rem;
+    margin-left: 23rem;
+    margin-right: auto;
+}
+.covid{
+  display: flex;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  color: var(--light);
+}
+.cont2 {
+  display: flex;
+  flex-wrap: nowrap;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .undercloud .second{
   display: none;
@@ -680,6 +740,10 @@ footer .links2 .links2ul {
     display: initial;
     top: 370rem;
   }
+  .planet{
+    visibility: visible;
+}
+  
 }
 
 @media all and (min-width: 1600px) {
@@ -688,10 +752,7 @@ footer .links2 .links2ul {
     flex-direction:row;
     justify-content: center;
   }
-  .button1 {
-    flex-direction: row;
-    justify-content: center;
-  }
+
   .table .fpictures {
     display: none;
   }
@@ -748,7 +809,9 @@ body > footer {
   transform: scale(0.9);
   transition: transform 0.2s;
 }
-
+.planet{
+  visibility: visible;
+}
 .button1:hover {
   box-shadow: inset 0 0 15px 0.5px var(--light);
   transition: box-shadow 0.2s;
