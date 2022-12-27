@@ -31,13 +31,14 @@ body ul {
   padding: 0;
 }
 header {
-  background-color: var(--background4);
-
+ 
+  backface-visibility: hidden;
+ 
   border-bottom: solid var(--light) 0.1rem;
 }
 .header {
-  background-color: var(--background4);
-  
+background-color: var(--background3);
+  backface-visibility: hidden;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -45,17 +46,17 @@ header {
   max-width: 1920px;
   margin: 0 auto;
 }
-.hrDeks{
-display:none;
-}
+
 .header .header_ {
+
   display: none;
   font-size: 2rem;
   margin: auto 9.5rem;
 }
 .menu {
-  background: var(--background4);
+  background: var(--background3);
   border: none;
+  backface-visibility: hidden;
   margin-right: 2.9rem;
 }
 .header .cloud {
@@ -65,15 +66,7 @@ display:none;
   padding: 1rem 2.9rem;
   padding-right: 5rem;
 }
-.covid{
-  display:none;
-}
-.hrDeks3 {
-  display: none;
-}
-.planet {
-  display:none;
-}
+
 .header span {
   font-weight: bold;
 }
@@ -189,11 +182,7 @@ a {
   color: whitesmoke;
 }
 
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
+
 
 .firstul {
   display: grid;
