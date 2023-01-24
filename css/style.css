@@ -37,8 +37,9 @@ header {
   border-bottom: solid var(--light) 0.1rem;
 }
 .header {
-background-color: var(--background3);
-  backface-visibility: hidden;
+background:rgba(255, 255, 255, 0.1);
+
+backdrop-filter: blur(20px);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -53,8 +54,8 @@ background-color: var(--background3);
   font-size: 2rem;
   margin: auto 9.5rem;
 }
-.menu {
-  background: var(--background3);
+.header .menu {
+  background:none;
   border: none;
   backface-visibility: hidden;
   margin-right: 2.9rem;
